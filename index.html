@@ -11,7 +11,7 @@
 <body>
 
     <header class="header">
-        <h2 class="logo">✦ Saúl Amador</h2>
+        <h2 class="logo">T</h2>
         <nav>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#skills">Skills</a>
@@ -299,135 +299,158 @@
     <section class="projects" id="proyectos">
         <h2 class="section__title">Proyectos</h2>
         <span class="section__subtitle">Trabajos destacados</span>
-        <div class="project-grid">
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="./imagen/swaply.jpg" alt="Swaply">
-                </div>
-                <div class="project-info">
-                    <span class="project-category">En curso · Equipo</span>
-                    <h3>Swaply</h3>
-                    <p>
+        <div class="projects__list">
+
+            <article class="project__item">
+                <span class="project__number">01/05</span>
+                <div class="project__body">
+                    <div class="project__header">
+                        <h3 class="project__name">Swaply</h3>
+                        <div class="project__meta">
+                            <span class="project__year">2026</span>
+                            <span class="project__dot">·</span>
+                            <span class="project__tag">En curso · Equipo</span>
+                        </div>
+                    </div>
+                    <p class="project__desc">
                         Plataforma web para que coleccionistas intercambien artículos duplicados
                         (stickers, cartas TCG, coleccionables). Incluye gestión de inventario,
                         matching inteligente entre usuarios y filtros por ubicación para
-                        intercambios locales. Desarrollo en equipo con compañeros del bootcamp
-                        usando Vue 3 y Vite.
+                        intercambios locales. Desarrollo en equipo con Vue 3 y Vite.
                     </p>
-                    <div class="tech-tags">
+                    <div class="project__tech">
                         <span>Vue 3</span>
                         <span>Vite</span>
                         <span>JavaScript</span>
-                        <span>CSS</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://swaply-roan.vercel.app/" target="_blank">Demo en vivo →</a>
+                    <div class="project__links">
+                        <a href="https://swaply-roan.vercel.app/" target="_blank">Demo →</a>
                         <a href="https://github.com/Xeomus/Swaply" target="_blank">Código →</a>
                     </div>
                 </div>
             </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="./imagen/hogwarts-store.jpg" alt="Hogwarts Store">
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Full Stack</span>
-                    <h3>Hogwarts Store</h3>
-                    <p>
+
+            <article class="project__item">
+                <span class="project__number">02/05</span>
+                <div class="project__body">
+                    <div class="project__header">
+                        <h3 class="project__name">Hogwarts Store</h3>
+                        <div class="project__meta">
+                            <span class="project__year">2026</span>
+                            <span class="project__dot">·</span>
+                            <span class="project__tag">Full Stack</span>
+                        </div>
+                    </div>
+                    <p class="project__desc">
                         E-commerce mágico del universo de Harry Potter. Proyecto de graduación
                         de 4Geeks Academy. Incluye autenticación JWT, carrito de compras,
                         integración con Cloudinary, API externa de personajes y panel de perfil
                         de usuario con casa y patronus.
                     </p>
-                    <div class="tech-tags">
+                    <div class="project__tech">
                         <span>React</span>
                         <span>Python</span>
                         <span>Flask</span>
                         <span>PostgreSQL</span>
                         <span>JWT</span>
-                        <span>GSAP</span>
                         <span>Cloudinary</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://hogwarts-store.onrender.com" target="_blank">Demo en vivo →</a>
+                    <div class="project__links">
+                        <a href="https://hogwarts-store.onrender.com" target="_blank">Demo →</a>
                         <a href="https://github.com/SaulAmador/hogwarts_store" target="_blank">Código →</a>
                     </div>
                 </div>
             </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="./imagen/mucha-lucha.jpg" alt="Mucha Lucha MX">
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Hackathon</span>
-                    <h3>Mucha Lucha MX</h3>
-                    <p>
+
+            <article class="project__item">
+                <span class="project__number">03/05</span>
+                <div class="project__body">
+                    <div class="project__header">
+                        <h3 class="project__name">Mucha Lucha MX</h3>
+                        <div class="project__meta">
+                            <span class="project__year">2026</span>
+                            <span class="project__dot">·</span>
+                            <span class="project__tag">Hackathon</span>
+                        </div>
+                    </div>
+                    <p class="project__desc">
                         Sitio web de lucha libre mexicana construido en equipo durante un
                         hackathon de 6 horas. Incluye home, tienda, noticias, luchadores
                         y galería. Navbar y footer dinámicos con JavaScript, diseño 100%
                         responsivo con Bootstrap y temática visual de la cultura luchística.
                     </p>
-                    <div class="tech-tags">
+                    <div class="project__tech">
                         <span>HTML5</span>
                         <span>CSS3</span>
                         <span>JavaScript</span>
                         <span>Bootstrap</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://garciabangelica.github.io/hackaton/" target="_blank">Ver proyecto →</a>
+                    <div class="project__links">
+                        <a href="https://garciabangelica.github.io/hackaton/" target="_blank">Demo →</a>
                         <a href="https://github.com/GarciabAngelica/hackaton" target="_blank">Código →</a>
                     </div>
                 </div>
             </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="./imagen/snake-game.jpg" alt="Snake Game">
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Juego · Python</span>
-                    <h3>Snake Game</h3>
-                    <p>
+
+            <article class="project__item">
+                <span class="project__number">04/05</span>
+                <div class="project__body">
+                    <div class="project__header">
+                        <h3 class="project__name">Snake Game</h3>
+                        <div class="project__meta">
+                            <span class="project__year">2025</span>
+                            <span class="project__dot">·</span>
+                            <span class="project__tag">Stanford · Python</span>
+                        </div>
+                    </div>
+                    <p class="project__desc">
                         Versión mejorada del clásico Snake, desarrollada como proyecto final
                         del curso Code in Place de Stanford University. Obstáculos aleatorios
                         que aumentan con la partida, comida con efectos visuales, serpiente
                         que cambia de color según su tamaño y opción de reinicio con tecla R.
                     </p>
-                    <div class="tech-tags">
+                    <div class="project__tech">
                         <span>Python</span>
                         <span>Turtle</span>
                         <span>Freegames</span>
                     </div>
-                    <div class="project-links">
+                    <div class="project__links">
                         <a href="https://github.com/SaulAmador/snake_game" target="_blank">Código →</a>
                     </div>
                 </div>
             </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="./imagen/starwars-blog.jpg" alt="Star Wars Blog">
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Full Stack</span>
-                    <h3>Star Wars Blog</h3>
-                    <p>
+
+            <article class="project__item">
+                <span class="project__number">05/05</span>
+                <div class="project__body">
+                    <div class="project__header">
+                        <h3 class="project__name">Star Wars Blog</h3>
+                        <div class="project__meta">
+                            <span class="project__year">2026</span>
+                            <span class="project__dot">·</span>
+                            <span class="project__tag">Full Stack</span>
+                        </div>
+                    </div>
+                    <p class="project__desc">
                         Blog de Star Wars con frontend en React que consume una API REST
                         propia construida con Flask y SQLAlchemy. Proyecto del bootcamp de
                         4Geeks Academy donde practiqué la separación frontend/backend,
                         modelado de datos y despliegue de APIs.
                     </p>
-                    <div class="tech-tags">
+                    <div class="project__tech">
                         <span>React</span>
                         <span>Python</span>
                         <span>Flask</span>
                         <span>SQLAlchemy</span>
                         <span>REST API</span>
                     </div>
-                    <div class="project-links">
+                    <div class="project__links">
                         <a href="https://github.com/SaulAmador/BlogdeStarWars-TSVA" target="_blank">Frontend →</a>
                         <a href="https://github.com/SaulAmador/StarwarsBlogApi-TSVA" target="_blank">API →</a>
                     </div>
                 </div>
             </article>
+
         </div>
     </section>
 

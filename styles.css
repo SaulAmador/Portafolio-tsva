@@ -526,108 +526,103 @@ nav a:hover {
     color: var(--text-dim);
 }
 
-/* PROJECTS */
+/* PROJECTS (Ewan-inspired list) */
 .projects {
     padding: 100px 10% 120px;
 }
 
-.project-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.projects__list {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.project-card {
-    background: var(--bg-card);
-    border: 1px solid rgba(42, 95, 122, 0.12);
-    border-radius: 25px;
-    overflow: hidden;
+.project__item {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    min-height: 360px;
-    transition: 0.3s;
+    grid-template-columns: 80px 1fr;
+    gap: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(42, 95, 122, 0.1);
 }
 
-.project-card:hover {
-    transform: translateY(-6px);
-    border-color: var(--primary);
-    box-shadow: 0 0 30px rgba(42, 95, 122, 0.15);
+.project__item:last-child {
+    border-bottom: none;
 }
 
-.project-image {
-    background: rgba(255, 255, 255, 0.08);
-    min-height: 360px;
+.project__number {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    padding-top: 6px;
 }
 
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.project-info {
-    padding: 45px;
+.project__header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
 }
 
-.project-category {
-    display: inline-block;
-    width: max-content;
-    background: rgba(42, 95, 122, 0.12);
+.project__name {
+    font-size: 2rem;
     color: var(--primary);
-    border: 1px solid rgba(42, 95, 122, 0.2);
-    padding: 7px 14px;
-    border-radius: 999px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    margin-bottom: 18px;
+    font-weight: 600;
 }
 
-.project-info h3 {
-    color: var(--primary);
-    font-size: 2.4rem;
-    margin-bottom: 15px;
+.project__meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-dim);
 }
 
-.project-info p {
-    color: var(--text);
-    line-height: 1.8;
-    margin-bottom: 25px;
+.project__dot {
+    color: var(--accent);
 }
 
-.tech-tags {
+.project__tag {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.project__desc {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    max-width: 700px;
+}
+
+.project__tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 25px;
+    gap: 8px;
+    margin-bottom: 16px;
 }
 
-.tech-tags span {
+.project__tech span {
     background: rgba(42, 95, 122, 0.08);
     color: var(--primary);
-    border: 1px solid rgba(42, 95, 122, 0.15);
-    padding: 8px 14px;
+    border: 1px solid rgba(42, 95, 122, 0.12);
+    padding: 5px 12px;
     border-radius: 999px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
-.project-links {
+.project__links {
     display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.project-links a {
+.project__links a {
     text-decoration: none;
     color: var(--primary);
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 0.9rem;
     transition: 0.3s;
 }
 
-.project-links a:hover {
+.project__links a:hover {
     color: var(--accent);
 }
 
@@ -737,11 +732,15 @@ footer {
         width: 240px;
         height: 320px;
     }
-    .project-card {
-        grid-template-columns: 1fr;
+    .project__item {
+        grid-template-columns: 60px 1fr;
+        gap: 20px;
     }
-    .project-image {
-        min-height: 300px;
+    .project__name {
+        font-size: 1.6rem;
+    }
+    .project__header {
+        gap: 12px;
     }
 }
 
@@ -825,11 +824,12 @@ footer {
     h2 {
         font-size: 2.5rem;
     }
-    .project-info {
-        padding: 30px;
+    .project__item {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
-    .project-info h3 {
-        font-size: 2rem;
+    .project__name {
+        font-size: 1.5rem;
     }
     .contact .section__title {
         font-size: 2.2rem;
