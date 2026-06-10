@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúl Amador | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <h2 class="logo">✦ Saúl Amador</h2>
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#skills">Skills</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="./archivos/cv.pdf" download class="nav-btn">Descargar CV</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-bg-text">SAÚL AMADOR</div>
+        <div class="hero-image-box">
+            <img src="./imagen/foto-hero.jpg" alt="Foto de Saúl Amador">
+        </div>
+        <div class="hero-content">
+            <h1>SAÚL AMADOR</h1>
+            <h3>Full Stack Developer</h3>
+            <p>
+                Desarrollo aplicaciones web modernas, escalables y funcionales
+                usando Java, Spring Boot, JavaScript, SQL y APIs REST.
+            </p>
+            <div class="socials">
+                <a href="https://github.com/tlalocsaul" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/tlalocsaul/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:tlalocsaul@email.com">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="hero-buttons">
+                <a href="./archivos/cv.pdf" target="_blank" class="cv-btn">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                </a>
+            </div>
+        </div>
+        <button class="scroll-btn" onclick="scrollToSection()">Scroll<br>down</button>
+    </section>
+
+    <section class="about" id="sobre-mi">
+        <div class="about-text">
+            <h2>Hola,<br>soy Saúl!</h2>
+            <p>
+                Soy desarrollador Full Stack en formación, con interés en crear
+                aplicaciones web funcionales, bien estructuradas y centradas en la
+                experiencia del usuario.
+            </p>
+            <p>
+                Me gusta combinar la lógica del backend con interfaces visualmente
+                cuidadas, usando tecnologías como Java, Spring Boot, HTML, CSS,
+                JavaScript, Bootstrap, Git y bases de datos SQL.
+            </p>
+            <a href="#contacto" class="search-btn">Contáctame</a>
+        </div>
+        <div class="about-card">
+            <img src="./imagen/foto-about.jpg" alt="Foto de Saúl Amador">
+            <div class="contact-card">
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> México</p>
+                <p><i class="fa-solid fa-envelope"></i> tlalocsaul@email.com</p>
+                <p><i class="fa-brands fa-github"></i> github.com/tlalocsaul</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume" id="skills">
+        <div class="education">
+            <h2>Educación</h2>
+            <div class="item">
+                <h3>2026</h3>
+                <p>Bootcamp Java Full Stack Jr.</p>
+            </div>
+            <div class="item">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, Bootstrap y diseño responsivo.</p>
+            </div>
+            <div class="item">
+                <h3>Backend</h3>
+                <p>Java, Spring Boot, APIs REST y bases de datos SQL.</p>
+            </div>
+            <div class="experience-box">
+                <h2>Experiencia</h2>
+                <div class="item dark">
+                    <h3>Proyectos web</h3>
+                    <p>
+                        Desarrollo de interfaces, consumo de APIs, estructura de proyectos
+                        y control de versiones con Git y GitHub.
+                    </p>
+                </div>
+                <div class="tags">
+                    <span>#Java</span>
+                    <span>#SpringBoot</span>
+                    <span>#Frontend</span>
+                    <span>#FullStack</span>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skill-columns">
+                <div>
+                    <h3>Backend</h3>
+                    <p>Java</p>
+                    <p>Spring Boot</p>
+                    <p>REST APIs</p>
+                    <p>MySQL</p>
+                </div>
+                <div>
+                    <h3>Frontend</h3>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                    <p>Bootstrap</p>
+                </div>
+                <div>
+                    <h3>Tools</h3>
+                    <p>Git</p>
+                    <p>GitHub</p>
+                    <p>VS Code</p>
+                    <p>IntelliJ IDEA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="proyectos">
+        <div class="projects-header">
+            <h1>PROYECTOS DESTACADOS</h1>
+            <p>
+                Algunos proyectos que he desarrollado durante mi formación
+                como Full Stack Developer.
+            </p>
+        </div>
+        <div class="project-grid">
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="./imagen/proyecto1.jpg" alt="Proyecto 1">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Frontend</span>
+                    <h3>Nombre Proyecto</h3>
+                    <p>Descripción breve de tu proyecto. Tecnologías usadas y qué problema resuelve.</p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Ver Proyecto →</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="./imagen/proyecto2.jpg" alt="Proyecto 2">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Landing Page</span>
+                    <h3>Nombre Proyecto</h3>
+                    <p>Descripción breve de tu proyecto. Tecnologías usadas y qué problema resuelve.</p>
+                    <div class="tech-tags">
+                        <span>Bootstrap</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Ver Proyecto →</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="./imagen/proyecto3.jpg" alt="Proyecto 3">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Backend</span>
+                    <h3>Nombre Proyecto</h3>
+                    <p>Descripción breve de tu proyecto.</p>
+                    <div class="tech-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Ver Proyecto →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <h2>Trabajemos juntos</h2>
+            <p>
+                Gracias por llegar hasta aquí.
+                Si tienes una oportunidad, proyecto o simplemente quieres conectar,
+                estaré encantado de escucharte.
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/tlalocsaul" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/tlalocsaul/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:tlalocsaul@email.com">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Saúl Amador | Full Stack Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
