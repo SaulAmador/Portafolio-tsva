@@ -23,38 +23,60 @@
 
     <section class="hero" id="inicio">
         <div class="hero-bg-text">SAÚL AMADOR</div>
-        <div class="hero-image-box">
-            <img src="./imagen/foto-hero.jpg" alt="Foto de Saúl Amador">
-        </div>
-        <div class="hero-content">
-            <h1>SAÚL AMADOR</h1>
-            <h3>Full Stack Developer</h3>
-            <p>
-                Construyo aplicaciones web completas — desde la base de datos
-                hasta el frontend — con Java, Python, JavaScript y sus frameworks.
-            </p>
-            <div class="socials">
-                <a href="https://github.com/SaulAmador" target="_blank">
-                    <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/saul-amador" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="mailto:anthraz.wow@gmail.com">
-                    <i class="fa-solid fa-envelope"></i> Email
-                </a>
+        <div class="hero__container">
+            <div class="hero__blob">
+                <div class="hero__perfil">
+                    <img src="./imagen/foto-hero.jpg" alt="Foto de Saúl Amador">
+                </div>
+                <i class="fa-regular fa-circle hero__shape-circle"></i>
             </div>
-            <div class="hero-buttons">
-                <a href="./cv.html" target="_blank" class="cv-btn">
-                    <i class="fa-solid fa-file-pdf"></i> Ver CV
-                </a>
+            <div class="hero-content">
+                <h1>SAÚL AMADOR</h1>
+                <h3>Full Stack Developer</h3>
+                <p>
+                    Construyo aplicaciones web completas — desde la base de datos
+                    hasta el frontend — con Java, Python, JavaScript y sus frameworks.
+                </p>
+                <div class="socials">
+                    <a href="https://github.com/SaulAmador" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/saul-amador" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:anthraz.wow@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="./cv.html" target="_blank" class="cv-btn">
+                        <i class="fa-solid fa-file-pdf"></i> Ver CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero__info">
+                <div>
+                    <h3 class="hero__info-title">AÑOS DE EXPERIENCIA</h3>
+                    <p class="hero__info-number">01+</p>
+                </div>
+                <div>
+                    <h3 class="hero__info-title">PROYECTOS</h3>
+                    <p class="hero__info-number">05+</p>
+                </div>
+                <div>
+                    <h3 class="hero__info-title">STACK</h3>
+                    <p class="hero__info-number">Full</p>
+                </div>
             </div>
         </div>
         <button class="scroll-btn" onclick="scrollToSection()">Scroll<br>down</button>
     </section>
 
     <section class="about" id="sobre-mi">
-        <div class="about-text">
+        <h2 class="section__title">Sobre mí</h2>
+        <span class="section__subtitle">Mi historia</span>
+        <div class="about__container">
+            <div class="about-text">
             <h2>Hola,<br>soy Saúl!</h2>
             <p>
                 Desarrollador Full Stack con bootcamp en 4Geeks Academy y
@@ -95,11 +117,15 @@
                 <p><i class="fa-brands fa-github"></i> github.com/SaulAmador</p>
             </div>
         </div>
+        </div>
     </section>
 
     <section class="resume" id="skills">
-        <div class="education">
-            <h2>Educación</h2>
+        <h2 class="section__title">Skills & Experiencia</h2>
+        <span class="section__subtitle">Mi stack y trayectoria</span>
+        <div class="resume__container">
+            <div class="education">
+                <h2>Educación</h2>
             <div class="item">
                 <h3>2026 · 4Geeks Academy</h3>
                 <p>Bootcamp Full Stack Developer — Proyecto de graduación: Hogwarts Store (e-commerce Full Stack)</p>
@@ -159,46 +185,120 @@
         </div>
         <div class="skills">
             <h2>Technical Skills</h2>
-            <div class="skill-columns">
-                <div>
-                    <h3>Backend</h3>
-                    <p>Java (en formación)</p>
-                    <p>Spring Boot</p>
-                    <p>Python</p>
-                    <p>Flask</p>
-                    <p>Node.js / Express.js</p>
-                    <p>REST APIs</p>
-                    <p>PostgreSQL / MySQL / MongoDB</p>
+
+            <div class="skills__content">
+                <h3 class="skills__title"><i class="fa-solid fa-braces"></i> Backend</h3>
+                <div class="skills__info">
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-java"></i></div>
+                        <h3 class="skills__name">Java</h3>
+                        <span class="skills__subtitle">Formación</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-solid fa-leaf"></i></div>
+                        <h3 class="skills__name">Spring Boot</h3>
+                        <span class="skills__subtitle">Formación</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-python"></i></div>
+                        <h3 class="skills__name">Python</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-solid fa-flask"></i></div>
+                        <h3 class="skills__name">Flask</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-node-js"></i></div>
+                        <h3 class="skills__name">Node.js</h3>
+                        <span class="skills__subtitle">Básico</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="skills__name">SQL / NoSQL</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
                 </div>
-                <div>
-                    <h3>Frontend</h3>
-                    <p>HTML5</p>
-                    <p>CSS3</p>
-                    <p>JavaScript (ES6+)</p>
-                    <p>React.js</p>
-                    <p>Bootstrap</p>
+            </div>
+
+            <div class="skills__content">
+                <h3 class="skills__title"><i class="fa-solid fa-code"></i> Frontend</h3>
+                <div class="skills__info">
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-html5"></i></div>
+                        <h3 class="skills__name">HTML5</h3>
+                        <span class="skills__subtitle">Avanzado</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-css3-alt"></i></div>
+                        <h3 class="skills__name">CSS3</h3>
+                        <span class="skills__subtitle">Avanzado</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-js"></i></div>
+                        <h3 class="skills__name">JavaScript</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-react"></i></div>
+                        <h3 class="skills__name">React</h3>
+                        <span class="skills__subtitle">Básico</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-bootstrap"></i></div>
+                        <h3 class="skills__name">Bootstrap</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-vuejs"></i></div>
+                        <h3 class="skills__name">Vue.js</h3>
+                        <span class="skills__subtitle">En curso</span>
+                    </div>
                 </div>
-                <div>
-                    <h3>Tools & Más</h3>
-                    <p>Git / GitHub</p>
-                    <p>Postman</p>
-                    <p>VS Code / IntelliJ</p>
-                    <p>Scrum</p>
-                    <p>Clean Code</p>
-                    <p>🇬🇧 Inglés A2-B1</p>
+            </div>
+
+            <div class="skills__content">
+                <h3 class="skills__title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Más</h3>
+                <div class="skills__info">
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-git-alt"></i></div>
+                        <h3 class="skills__name">Git</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-brands fa-github"></i></div>
+                        <h3 class="skills__name">GitHub</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-solid fa-flask"></i></div>
+                        <h3 class="skills__name">Postman</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-solid fa-users"></i></div>
+                        <h3 class="skills__name">Scrum</h3>
+                        <span class="skills__subtitle">Básico</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-regular fa-message"></i></div>
+                        <h3 class="skills__name">Clean Code</h3>
+                        <span class="skills__subtitle">Intermedio</span>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__blob"><i class="fa-solid fa-language"></i></div>
+                        <h3 class="skills__name">Inglés</h3>
+                        <span class="skills__subtitle">A2-B1</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="projects" id="proyectos">
-        <div class="projects-header">
-            <h1>PROYECTOS DESTACADOS</h1>
-            <p>
-                Algunos proyectos que he desarrollado durante mi formación
-                como Full Stack Developer.
-            </p>
-        </div>
+        <h2 class="section__title">Proyectos</h2>
+        <span class="section__subtitle">Trabajos destacados</span>
         <div class="project-grid">
             <article class="project-card">
                 <div class="project-image">
@@ -332,8 +432,9 @@
     </section>
 
     <section class="contact" id="contacto">
+        <h2 class="section__title">Contacto</h2>
+        <span class="section__subtitle">Trabajemos juntos</span>
         <div class="contact-container">
-            <h2>Trabajemos juntos</h2>
             <p>
                 Gracias por llegar hasta aquí.
                 Si tienes una oportunidad, proyecto o simplemente quieres conectar,
