@@ -1,6 +1,6 @@
 # Portafolio-tsva 🌟
 
-Portafolio profesional de Saúl Amador — desarrollador Full Stack.
+Portafolio profesional 
 
 ## Estructura del proyecto
 
@@ -29,10 +29,3 @@ Portafolio-tsva/
 | **Snake Game** | Juego | Python, Turtle, Freegames |
 | **Star Wars Blog** | Full Stack | React, Flask, SQLAlchemy, REST API |
 
-## Pendiente
-
-- [ ] Poner tus fotos en `imagen/` (foto-hero.jpg, foto-about.jpg)
-- [ ] Capturas de pantalla de cada proyecto en `imagen/`
-- [ ] `cv.html` ya está listo — ábrelo en navegador y Ctrl+P para guardar como PDF
-- [ ] Personalizar la paleta de colores en `styles.css` (`:root`)
-- [ ] Publicar con GitHub Pages
