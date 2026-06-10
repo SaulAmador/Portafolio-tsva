@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúl Amador · CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f0f0f0;
+            color: #1a1a1a;
+            padding: 40px;
+        }
+        .page {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px 55px;
+            box-shadow: 0 4px 20px rgba(0,0,0,.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 3px solid #1a3a3a;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            color: #1a3a3a;
+            letter-spacing: -1px;
+        }
+        .header .title {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+        }
+        .contact-info {
+            text-align: right;
+            font-size: .85rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        .contact-info a { color: #1a3a3a; text-decoration: none; }
+        .contact-info a:hover { text-decoration: underline; }
+        section { margin-bottom: 22px; }
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1a3a3a;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 6px;
+            margin-bottom: 12px;
+        }
+        .profile p { font-size: .92rem; line-height: 1.6; color: #333; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 30px;
+            font-size: .88rem;
+            line-height: 1.7;
+        }
+        .skills-grid .cat { font-weight: 700; color: #1a3a3a; }
+        .item { margin-bottom: 14px; }
+        .item h3 { font-size: .95rem; color: #1a3a3a; }
+        .item .sub { font-size: .82rem; color: #666; margin-bottom: 4px; }
+        .item p { font-size: .88rem; line-height: 1.5; color: #444; }
+        .project-name { font-weight: 700; color: #1a3a3a; }
+        .tags { font-size: .8rem; color: #777; margin-top: 2px; }
+        .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 30px; }
+        .edu-item { font-size: .88rem; }
+        .edu-item strong { color: #1a3a3a; }
+        .edu-item .date { color: #777; font-size: .8rem; }
+        .lang { font-size: .88rem; line-height: 1.6; }
+        @media print {
+            body { padding: 0; background: white; }
+            .page { box-shadow: none; padding: 30px 40px; max-width: 100%; }
+        }
+        @media (max-width: 600px) {
+            .header { flex-direction: column; gap: 15px; }
+            .contact-info { text-align: left; }
+            .skills-grid, .edu-grid { grid-template-columns: 1fr; }
+            body { padding: 15px; }
+            .page { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div>
+                <h1>Saúl Amador</h1>
+                <div class="title">Desarrollador Full Stack — Java en formación</div>
+            </div>
+            <div class="contact-info">
+                Ecatepec, México<br>
+                <a href="mailto:anthraz.wow@gmail.com">anthraz.wow@gmail.com</a><br>
+                <a href="https://github.com/SaulAmador" target="_blank">github.com/SaulAmador</a><br>
+                56 3174 6498<br>
+                <a href="https://linkedin.com/in/saul-amador" target="_blank">linkedin.com/in/saul-amador</a>
+            </div>
+        </div>
+
+        <section class="profile">
+            <h2>Perfil Profesional</h2>
+            <p>
+                Desarrollador Full Stack con bootcamp completado en 4Geeks Academy y certificación en
+                programación por Stanford University. Actualmente en formación en Java y Spring Boot,
+                con interés en desarrollar software seguro y escalable. Persona comprometida, con
+                capacidad de adaptación y enfoque en aprendizaje continuo. Buscando primera oportunidad
+                en desarrollo backend.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tecnologías y Herramientas</h2>
+            <div class="skills-grid">
+                <div><span class="cat">Lenguajes:</span> JavaScript (ES6+), Python, HTML5, CSS3, Java (en formación)</div>
+                <div><span class="cat">Frameworks:</span> React.js, Node.js, Express.js, Flask, Spring Boot</div>
+                <div><span class="cat">Bases de datos:</span> MySQL, PostgreSQL, MongoDB</div>
+                <div><span class="cat">Herramientas:</span> Git/GitHub, Postman, VS Code, IntelliJ IDEA</div>
+                <div><span class="cat">Metodologías:</span> Scrum, trabajo colaborativo, clean code</div>
+                <div><span class="cat">Certificaciones:</span> Cybersecurity (ISC2 — en curso)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proyectos Destacados</h2>
+            <div class="item">
+                <div class="project-name">Hogwarts Store</div>
+                <div class="sub">Full Stack · React, Flask, PostgreSQL, JWT, GSAP</div>
+                <p>
+                    E-commerce mágico del universo de Harry Potter. Proyecto de graduación de 4Geeks Academy.
+                    Autenticación JWT, carrito de compras, integración con Cloudinary, API externa de personajes
+                    y perfil de usuario con casa y patronus. Lideré el desarrollo en solitario.
+                </p>
+                <div class="tags">github.com/SaulAmador/hogwarts_store · hogwarts-store.onrender.com</div>
+            </div>
+            <div class="item">
+                <div class="project-name">Snake Game</div>
+                <div class="sub">Python · Turtle, Freegames</div>
+                <p>
+                    Versión mejorada del clásico Snake. Proyecto final de Code in Place — Stanford University.
+                    Obstáculos aleatorios progresivos, comida con efectos visuales, serpiente con color
+                    dinámico y reinicio con tecla R.
+                </p>
+                <div class="tags">github.com/SaulAmador/snake_game</div>
+            </div>
+            <div class="item">
+                <div class="project-name">Mucha Lucha MX</div>
+                <div class="sub">Frontend · HTML5, CSS3, JavaScript, Bootstrap</div>
+                <p>
+                    Sitio web de lucha libre mexicana. Construido en equipo durante un hackathon de 6 horas.
+                    Navbar y footer dinámicos, 5 secciones funcionales, diseño 100% responsivo.
+                </p>
+                <div class="tags">github.com/GarciabAngelica/hackaton</div>
+            </div>
+            <div class="item">
+                <div class="project-name">Star Wars Blog</div>
+                <div class="sub">Full Stack · React, Flask, SQLAlchemy</div>
+                <p>
+                    Blog de Star Wars con frontend React + API REST propia con Flask. Proyecto del bootcamp
+                    de 4Geeks Academy. Separación frontend/backend, modelado de datos y despliegue de APIs.
+                </p>
+                <div class="tags">github.com/SaulAmador/BlogdeStarWars-TSVA</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experiencia Laboral</h2>
+            <div class="item">
+                <h3>Hospital Español S.B.E. — Trabajador General</h3>
+                <p>
+                    Apoyo en áreas críticas cumpliendo estrictos protocolos de seguridad y manejo de
+                    desechos hospitalarios. Coordinación con equipos multidisciplinarios para garantizar
+                    eficiencia operativa.
+                </p>
+            </div>
+            <div class="item">
+                <h3>La Feria de Chapultepec — Líder de equipo</h3>
+                <p>
+                    Supervisión de operación y seguridad en juegos mecánicos, gestionando equipo de hasta
+                    8 personas. Captura y análisis de datos operativos para mejorar tiempos de respuesta.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educación y Certificaciones</h2>
+            <div class="edu-grid">
+                <div class="edu-item">
+                    <strong>Bootcamp Full Stack Developer</strong><br>
+                    4Geeks Academy · Marzo 2026
+                </div>
+                <div class="edu-item">
+                    <strong>Code in Place (Programación)</strong><br>
+                    Stanford University · Certificado
+                </div>
+                <div class="edu-item">
+                    <strong>Certified in Cybersecurity (CC)</strong><br>
+                    ISC2 · En curso
+                </div>
+                <div class="edu-item">
+                    <strong>Inglés A2-B1</strong><br>
+                    En aprendizaje continuo
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

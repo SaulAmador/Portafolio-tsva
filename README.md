@@ -15,8 +15,8 @@ Portafolio-tsva/
 │   ├── proyecto1.jpg
 │   ├── proyecto2.jpg
 │   └── proyecto3.jpg
-├── archivos/        # PDFs descargables
-│   └── cv.pdf
+├── cv.html          # CV imprimible (Ctrl+P → PDF)
+├── archivos/        # PDFs adicionales
 └── README.md
 ```
 
@@ -33,6 +33,6 @@ Portafolio-tsva/
 
 - [ ] Poner tus fotos en `imagen/` (foto-hero.jpg, foto-about.jpg)
 - [ ] Capturas de pantalla de cada proyecto en `imagen/`
-- [ ] Poner tu CV en `archivos/cv.pdf`
+- [ ] `cv.html` ya está listo — ábrelo en navegador y Ctrl+P para guardar como PDF
 - [ ] Personalizar la paleta de colores en `styles.css` (`:root`)
 - [ ] Publicar con GitHub Pages
