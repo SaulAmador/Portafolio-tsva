@@ -20,12 +20,19 @@ Portafolio-tsva/
 └── README.md
 ```
 
-## Personalización pendiente
+## Proyectos incluidos
 
-- [ ] Reemplazar fotos en `imagen/` con tus propias imágenes
+| Proyecto | Tipo | Stack |
+|---|---|---|
+| **Hogwarts Store** | Full Stack | React, Python, Flask, PostgreSQL, JWT, GSAP |
+| **Mucha Lucha MX** | Hackathon | HTML5, CSS3, JavaScript, Bootstrap |
+| **Snake Game** | Juego | Python, Turtle, Freegames |
+| **Star Wars Blog** | Full Stack | React, Flask, SQLAlchemy, REST API |
+
+## Pendiente
+
+- [ ] Poner tus fotos en `imagen/` (foto-hero.jpg, foto-about.jpg)
+- [ ] Capturas de pantalla de cada proyecto en `imagen/`
 - [ ] Poner tu CV en `archivos/cv.pdf`
-- [ ] Actualizar redes sociales en todos los archivos
-- [ ] Cambiar textos de descripción, educación y experiencia
-- [ ] Agregar tus proyectos reales
 - [ ] Personalizar la paleta de colores en `styles.css` (`:root`)
 - [ ] Publicar con GitHub Pages
