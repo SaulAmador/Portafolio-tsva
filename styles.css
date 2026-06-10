@@ -161,29 +161,41 @@ nav a:hover {
 
 .hero__blob {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 280px;
+    height: 380px;
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 6.25rem;
     justify-self: center;
     place-items: center;
     display: grid;
-    overflow: hidden;
-    border-radius: 50%;
-    background: rgba(255,255,255,.05);
-    border: 2px solid rgba(255,255,255,.15);
-}
-
-.hero__blob iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
 }
 
 .hero__perfil {
-    display: none;
+    width: 240px;
+    height: 340px;
+    background: rgba(255,255,255,.1);
+    border-radius: 5.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero__perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
 }
 
 .hero__shape-circle {
-    display: none;
+    position: absolute;
+    font-size: 8rem;
+    color: rgba(255,255,255,.15);
+    bottom: -2rem;
+    right: -3rem;
+    transform: rotate(15deg);
+    z-index: -1;
 }
 
 .hero-content {
@@ -722,8 +734,8 @@ footer {
         font-size: 4.5rem;
     }
     .hero__blob {
-        width: 350px;
-        height: 350px;
+        width: 240px;
+        height: 320px;
     }
     .project-card {
         grid-template-columns: 1fr;
@@ -740,7 +752,7 @@ footer {
         gap: 30px;
     }
     .hero__blob {
-        width: 300px;
+        width: 220px;
         height: 300px;
         margin: 0 auto;
     }
@@ -801,7 +813,7 @@ footer {
         letter-spacing: -2px;
     }
     .hero__blob {
-        width: 280px;
+        width: 200px;
         height: 280px;
     }
     .section__title {
